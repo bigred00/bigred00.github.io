@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uniform Number Tracker</title>
+</head>
+<body>
+    <h1>Uniform Number Tracker</h1>
+
+    <div id="querySection">
+        <h2>Query Uniform Number</h2>
+        <label for="firstName">First Name: </label>
+        <input type="text" id="firstName" placeholder="Enter first name">
+        <label for="lastName">Last Name: </label>
+        <input type="text" id="lastName" placeholder="Enter last name">
+        <button onclick="queryUniformNumber()">Query</button>
+        <p id="queryResult"></p>
+    </div>
+
+    <div id="requestSection">
+        <h2>Request Uniform Number</h2>
+        <button onclick="getAvailableNumbers()">Get Available Numbers</button>
+        <p id="availableNumbers"></p>
+        <label for="requestedNumber">Request Number: </label>
+        <input type="text" id="requestedNumber" placeholder="Enter number">
+        <button onclick="submitRequest()">Submit Request</button>
+        <p id="requestResult"></p>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
